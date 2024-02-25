@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"1c0d56a6f61bd1e5","x":-720,"y":120,"width":1030,"height":398,"type":"group","label":"MyBatis"},
+		{"id":"6f279b6c2f584d7a","type":"group","x":40,"y":-120,"width":199,"height":160,"label":"Servlet"},
+		{"id":"4315752c2d292e2b","type":"text","text":"회원가입","x":-720,"y":-20,"width":117,"height":50},
+		{"id":"e6b963d20785d0ba","type":"text","text":"정보 입력","x":-560,"y":-20,"width":124,"height":50},
+		{"id":"b42e3061c7d51ccd","type":"text","text":"submit()","x":-400,"y":-20,"width":117,"height":50},
+		{"id":"d954d7023a45686f","type":"text","text":"id, pw, name, email","x":-480,"y":-120,"width":194,"height":50,"color":"5"},
+		{"id":"5551629f2735fbc7","type":"text","text":"HashMap","x":180,"y":220,"width":110,"height":50},
+		{"id":"b22cdc5c247b9cb8","x":-60,"y":340,"width":280,"height":118,"type":"text","text":"```java\nmap.put(\"u_id\", id);\nmap.put(\"u_pw\", pw);\nmap.put(\"u_name\", name);\nmap.put(\"u_mail\", email);\n```"},
+		{"id":"442e9f6506733206","type":"text","text":"member.xml","x":-280,"y":240,"width":131,"height":50},
+		{"id":"414371dba1324fe3","type":"text","text":"mapper","x":-200,"y":140,"width":103,"height":50},
+		{"id":"f78599f4a76620b5","type":"text","text":"Parameter 받기","x":60,"y":-100,"width":159,"height":50},
+		{"id":"812b187f9582856e","type":"text","text":"MyBatis를 통한\nDB 저장","x":60,"y":-40,"width":159,"height":60},
+		{"id":"8cf85c50599da67f","x":-680,"y":200,"width":290,"height":48,"type":"text","text":"```java\nss.insert(\"member.add\", map);\n```"},
+		{"id":"e31dda29b89dcd9f","type":"text","text":"```xml\n<insert id=\"add\" parameterType=\"Map\">\n\tINSERT INTO member(m_id, m_pw, m_name, m_email)\n\tVALUES(#{u_id}, #{u_pw}, #{u_name}, #{u_email})\n</insert>\n```","x":-640,"y":360,"width":480,"height":118}
+	],
+	"edges":[
+		{"id":"38d5ffbddb868c84","fromNode":"4315752c2d292e2b","fromSide":"right","toNode":"e6b963d20785d0ba","toSide":"left"},
+		{"id":"9c84df56335b0908","fromNode":"b42e3061c7d51ccd","fromSide":"right","toNode":"f78599f4a76620b5","toSide":"left","label":"서버로 전송"},
+		{"id":"098c7956bdee1b86","fromNode":"6f279b6c2f584d7a","fromSide":"bottom","toNode":"5551629f2735fbc7","toSide":"top","label":"받은 parameter"},
+		{"id":"b3d3144776f46c06","fromNode":"e6b963d20785d0ba","fromSide":"right","toNode":"b42e3061c7d51ccd","toSide":"left"},
+		{"id":"bff46c94274d8977","fromNode":"d954d7023a45686f","fromSide":"bottom","toNode":"b42e3061c7d51ccd","toSide":"top","toEnd":"none"},
+		{"id":"d975a1c7057da326","fromNode":"5551629f2735fbc7","fromSide":"bottom","toNode":"b22cdc5c247b9cb8","toSide":"top","toEnd":"none"},
+		{"id":"3871fb7e60063e6f","fromNode":"5551629f2735fbc7","fromSide":"left","toNode":"442e9f6506733206","toSide":"right"},
+		{"id":"878fba2971083fc7","fromNode":"414371dba1324fe3","fromSide":"bottom","toNode":"442e9f6506733206","toSide":"top","toEnd":"none"},
+		{"id":"abf2ad464fbeb5fd","fromNode":"442e9f6506733206","fromSide":"bottom","toNode":"e31dda29b89dcd9f","toSide":"top","toEnd":"none"},
+		{"id":"d9d69f765ea20261","fromNode":"442e9f6506733206","fromSide":"left","toNode":"8cf85c50599da67f","toSide":"right"}
+	]
+}

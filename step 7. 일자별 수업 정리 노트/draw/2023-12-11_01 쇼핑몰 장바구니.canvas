@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{"id":"bc3a666144fbf30b","x":180,"y":500,"width":239,"height":130,"type":"group","label":"ProductVO[]"},
+		{"id":"c4f1680ccdd4b04d","type":"text","text":"[[2023-12-11 아이디 중복 확인, 쇼핑몰 장바구니 구현#index.jsp|index.jsp]]","x":-60,"y":80,"width":124,"height":50},
+		{"id":"57732dcf70a7a50a","type":"text","text":"[[2023-12-11 아이디 중복 확인, 쇼핑몰 장바구니 구현#shop.xml|shop.xml]]","x":-60,"y":300,"width":117,"height":50},
+		{"id":"6726fb8d695bb92e","type":"text","text":"[[2023-12-11 아이디 중복 확인, 쇼핑몰 장바구니 구현#config.xml|config.xml]]","x":-120,"y":460,"width":131,"height":50},
+		{"id":"19631d800eb4ee62","type":"text","text":"[[2023-12-11 아이디 중복 확인, 쇼핑몰 장바구니 구현#ProductVO.java|ProductVO.java]]","x":240,"y":560,"width":159,"height":50},
+		{"id":"597bc59f434d8137","type":"text","text":"[[2023-12-11 아이디 중복 확인, 쇼핑몰 장바구니 구현#ProductVO.java|ProductVO.java]]","x":220,"y":540,"width":159,"height":50},
+		{"id":"3050420621cca85a","type":"text","text":"[[2023-12-11 아이디 중복 확인, 쇼핑몰 장바구니 구현#ProductVO.java|ProductVO.java]]","x":200,"y":520,"width":159,"height":50},
+		{"id":"0c0539cfb3cd567f","type":"text","text":"[[2023-12-11 아이디 중복 확인, 쇼핑몰 장바구니 구현#menu.jsp|menu.jsp]]","x":160,"y":220,"width":117,"height":50},
+		{"id":"424a26edcf39ffa3","type":"text","text":"[[2023-12-11 아이디 중복 확인, 쇼핑몰 장바구니 구현#style.css|style.css]]","x":140,"y":-60,"width":124,"height":50},
+		{"id":"fa526a30da0d07e5","type":"text","text":"MySQL shop_t","x":-360,"y":220,"width":145,"height":50},
+		{"id":"38b3211fa4ee4edd","type":"text","text":"[[2023-12-11 아이디 중복 확인, 쇼핑몰 장바구니 구현#ShopBean.java|ShopBean.java]]","x":580,"y":260,"width":152,"height":50},
+		{"id":"71cc95e8a1be4358","type":"text","text":"[[2023-12-11 아이디 중복 확인, 쇼핑몰 장바구니 구현#ShopDAO.java|ShopDAO.java]]","x":800,"y":420,"width":145,"height":50},
+		{"id":"b8a754729c1b0f0f","x":-240,"y":0,"width":159,"height":50,"color":"5","type":"text","text":"메뉴 화면 구성"},
+		{"id":"e0e305bdbdf3ed82","x":1040,"y":340,"width":334,"height":200,"color":"5","type":"text","text":"getList()\n- ProductVO 배열을 선언\n- SqlSession 열기\n- SQL문 수행, ProductVO 리스트에 저장\n- list와 같은 크기의 배열 생성\n- list를 배열로 저장 및 배열 반환"},
+		{"id":"0d5908fcc5dff77a","type":"text","text":"[[2023-12-11 아이디 중복 확인, 쇼핑몰 장바구니 구현#product_list.jsp|product_list.jsp]]","x":380,"y":80,"width":173,"height":50},
+		{"id":"8c390ef579f0fff4","x":500,"y":-340,"width":438,"height":308,"color":"5","type":"text","text":"jsp:useBean\n`id=\"sb\" class=\"shop.bean.ShopBean\" scope=\"session\"`\n- class 클래스를 id 이름의 객체로 생성한다.\n- 브라우저가 닫히기 전까지 이 객체는 유지된다.\n\njsp:setProperty\n`property=\"category\" name=\"sb\" param=\"category\"`\n- sb 객체의 멤버변수 category에 파라미터 category를 set한다."},
+		{"id":"4b2d08e596e85461","type":"text","text":"[[2023-12-11 아이디 중복 확인, 쇼핑몰 장바구니 구현#product_content.jsp|product_content.jsp]]","x":1140,"y":180,"width":194,"height":50}
+	],
+	"edges":[
+		{"id":"566d858e56a3f45d","fromNode":"0c0539cfb3cd567f","fromSide":"top","toNode":"c4f1680ccdd4b04d","toSide":"bottom","label":"jsp:include"},
+		{"id":"a936b638ae5ca7df","fromNode":"424a26edcf39ffa3","fromSide":"bottom","toNode":"c4f1680ccdd4b04d","toSide":"top","label":"link"},
+		{"id":"b4fcf3ba6426aa70","fromNode":"57732dcf70a7a50a","fromSide":"bottom","toNode":"6726fb8d695bb92e","toSide":"top","fromEnd":"arrow"},
+		{"id":"e37a61b567098afe","fromNode":"fa526a30da0d07e5","fromSide":"right","toNode":"6726fb8d695bb92e","toSide":"left","fromEnd":"arrow"},
+		{"id":"298d91688c7c8a50","fromNode":"424a26edcf39ffa3","fromSide":"bottom","toNode":"0d5908fcc5dff77a","toSide":"top","label":"link"},
+		{"id":"f56f41ab3ead35b3","fromNode":"0c0539cfb3cd567f","fromSide":"top","toNode":"0d5908fcc5dff77a","toSide":"bottom","label":"jsp:include"},
+		{"id":"f2147ac953226300","fromNode":"c4f1680ccdd4b04d","fromSide":"right","toNode":"0d5908fcc5dff77a","toSide":"left","color":"3","label":"parameter:category"},
+		{"id":"956e1a37a86f8cd7","fromNode":"0d5908fcc5dff77a","fromSide":"bottom","toNode":"38b3211fa4ee4edd","toSide":"top","color":"3","label":"parameter:category"},
+		{"id":"326fbb992b8fee73","fromNode":"57732dcf70a7a50a","fromSide":"right","toNode":"3050420621cca85a","toSide":"left","label":"resultType"},
+		{"id":"deee9eb1d3cb0553","fromNode":"71cc95e8a1be4358","fromSide":"left","toNode":"57732dcf70a7a50a","toSide":"right","label":"SQL문 수행"},
+		{"id":"3d237cc2764db39c","fromNode":"38b3211fa4ee4edd","fromSide":"right","toNode":"71cc95e8a1be4358","toSide":"top","color":"3","label":"searchProduct()"},
+		{"id":"f37f6dc85d707ce3","fromNode":"bc3a666144fbf30b","fromSide":"right","toNode":"71cc95e8a1be4358","toSide":"bottom","label":"ProductVO 배열로 수령"},
+		{"id":"d818bb6045e4c284","fromNode":"b8a754729c1b0f0f","fromSide":"bottom","toNode":"c4f1680ccdd4b04d","toSide":"left","color":"5"},
+		{"id":"f148f7739c70c279","fromNode":"e0e305bdbdf3ed82","fromSide":"left","toNode":"71cc95e8a1be4358","toSide":"right","color":"5"},
+		{"id":"4f4829060f3d475a","fromNode":"8c390ef579f0fff4","fromSide":"bottom","toNode":"0d5908fcc5dff77a","toSide":"top","color":"5"},
+		{"id":"3066fab47e9361b1","fromNode":"8c390ef579f0fff4","fromSide":"bottom","toNode":"4b2d08e596e85461","toSide":"top","color":"5"},
+		{"id":"abb676f659c02d97","fromNode":"424a26edcf39ffa3","fromSide":"right","toNode":"4b2d08e596e85461","toSide":"left","label":"link"},
+		{"id":"a4b0b0528362d73a","fromNode":"0c0539cfb3cd567f","fromSide":"right","toNode":"4b2d08e596e85461","toSide":"left","label":"jsp:include"},
+		{"id":"1ee08d3be2837dc4","fromNode":"0d5908fcc5dff77a","fromSide":"right","toNode":"4b2d08e596e85461","toSide":"left","color":"4","label":"p_num"}
+	]
+}

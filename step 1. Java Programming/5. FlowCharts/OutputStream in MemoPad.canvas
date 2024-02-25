@@ -1,0 +1,40 @@
+{
+	"nodes":[
+		{"id":"c0fd584ee645d0a2","x":-687,"y":-700,"width":867,"height":454,"type":"group","label":"Serialization"},
+		{"id":"dd061b51f3ca154d","type":"text","text":"FileOutputStream","x":-667,"y":-680,"width":180,"height":60},
+		{"id":"3e48090322342cc3","type":"text","text":"BufferedOutputStream","x":-380,"y":-680,"width":202,"height":60},
+		{"id":"e419273082978305","type":"text","text":"String str","x":-857,"y":-840,"width":171,"height":60},
+		{"id":"d8f70a3b427f2859","type":"text","text":"getBytes()","x":-630,"y":-840,"width":143,"height":60,"color":"4"},
+		{"id":"89e34b020101261b","type":"text","text":"Text File","x":28,"y":-680,"width":132,"height":60},
+		{"id":"cd3d082a1442d752","type":"text","text":"JFrame","x":-1177,"y":-840,"width":117,"height":60},
+		{"id":"637f919c9975d47f","type":"text","text":"JTextArea","x":-1078,"y":-680,"width":127,"height":60},
+		{"id":"e204d7b1017e82b8","type":"text","text":"JMenuBar","x":-1180,"y":-580,"width":124,"height":60},
+		{"id":"7b00f9913563f8b5","type":"text","text":"JMenu","x":-1174,"y":-460,"width":112,"height":60},
+		{"id":"aedb1aa8b16e6696","type":"text","text":"JMenuItem","x":-1185,"y":-326,"width":135,"height":60},
+		{"id":"24d0cc28583d2350","type":"text","text":"Save Button","x":-951,"y":-446,"width":145,"height":60,"color":"5"},
+		{"id":"996b472f9083644a","type":"text","text":"JFileChooser.showSaveDialog","x":-279,"y":-326,"width":250,"height":60,"color":"4"},
+		{"id":"7381050019b87e05","type":"text","text":"새 파일을 생성하여도 selectedFile에 해당한다.","x":-260,"y":-430,"width":250,"height":60,"color":"2"},
+		{"id":"ea4fa155159b800d","type":"text","text":"JFileChooser.getSelectedFile","x":-243,"y":-580,"width":271,"height":60,"color":"4"},
+		{"id":"1c02325f8bf3102b","type":"text","text":"File f\n- 파일의 정보를 받는다.\n- 파일의 주소와 이름","x":-637,"y":-536,"width":257,"height":120},
+		{"id":"d40b6e98e8eb130e","type":"text","text":"ActionListener.actionPerformed()","x":-706,"y":-220,"width":295,"height":60},
+		{"id":"64a8cd18e0267660","type":"text","text":"write text","x":-839,"y":-580,"width":133,"height":60,"color":"5"}
+	],
+	"edges":[
+		{"id":"026cd8985f13ca75","fromNode":"dd061b51f3ca154d","fromSide":"right","toNode":"3e48090322342cc3","toSide":"left"},
+		{"id":"9e6fff768692f71c","fromNode":"637f919c9975d47f","fromSide":"right","toNode":"64a8cd18e0267660","toSide":"left","color":"4","label":"write"},
+		{"id":"1c52ac26a6a57a12","fromNode":"cd3d082a1442d752","fromSide":"bottom","toNode":"637f919c9975d47f","toSide":"top"},
+		{"id":"da46f80b917744ca","fromNode":"996b472f9083644a","fromSide":"top","toNode":"ea4fa155159b800d","toSide":"bottom","color":"2"},
+		{"id":"44c7177a8c80b9a7","fromNode":"24d0cc28583d2350","fromSide":"right","toNode":"d40b6e98e8eb130e","toSide":"left","label":"listener"},
+		{"id":"d673fb8b76145410","fromNode":"d40b6e98e8eb130e","fromSide":"right","toNode":"996b472f9083644a","toSide":"left"},
+		{"id":"3ac4186fd7dc31e4","fromNode":"64a8cd18e0267660","fromSide":"top","toNode":"e419273082978305","toSide":"bottom","color":"3","label":"getText()"},
+		{"id":"87e5a771b2a6b130","fromNode":"e419273082978305","fromSide":"right","toNode":"d8f70a3b427f2859","toSide":"left","color":"3"},
+		{"id":"5fe80d18aafda507","fromNode":"d8f70a3b427f2859","fromSide":"right","toNode":"3e48090322342cc3","toSide":"top","color":"3","label":"input data"},
+		{"id":"87f6b94b7de04f59","fromNode":"3e48090322342cc3","fromSide":"right","toNode":"89e34b020101261b","toSide":"left","color":"3"},
+		{"id":"cf7a49628591cc06","fromNode":"ea4fa155159b800d","fromSide":"left","toNode":"1c02325f8bf3102b","toSide":"right","color":"4","label":"info"},
+		{"id":"fbb9cca6fbaf2580","fromNode":"1c02325f8bf3102b","fromSide":"top","toNode":"dd061b51f3ca154d","toSide":"bottom"},
+		{"id":"17bdcdbf2a55259f","fromNode":"cd3d082a1442d752","fromSide":"bottom","toNode":"e204d7b1017e82b8","toSide":"top"},
+		{"id":"7e0d5ea6905c2536","fromNode":"e204d7b1017e82b8","fromSide":"bottom","toNode":"7b00f9913563f8b5","toSide":"top"},
+		{"id":"326336c517f3225a","fromNode":"7b00f9913563f8b5","fromSide":"bottom","toNode":"aedb1aa8b16e6696","toSide":"top"},
+		{"id":"414fb8ddeeca9a2d","fromNode":"aedb1aa8b16e6696","fromSide":"right","toNode":"24d0cc28583d2350","toSide":"left"}
+	]
+}

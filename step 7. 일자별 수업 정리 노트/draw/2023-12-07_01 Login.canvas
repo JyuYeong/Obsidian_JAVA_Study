@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"0d7c874a33f9294e","type":"group","x":-940,"y":-20,"width":290,"height":340,"label":"필요한 파일"},
+		{"id":"cd1a64f8fa7882a1","type":"group","x":-560,"y":40,"width":400,"height":220,"label":"ex1_login_ok.jsp"},
+		{"id":"77797a054214b473","type":"group","x":-555,"y":-315,"width":215,"height":205,"label":"ex1_login.jsp"},
+		{"id":"634501c3a598636a","type":"text","text":"id : m_id","x":-535,"y":-295,"width":175,"height":50},
+		{"id":"3ad904a09cdbb0a4","type":"text","text":"pw : m_pw","x":-535,"y":-240,"width":175,"height":50},
+		{"id":"2174b65505379bde","type":"text","text":"로그인","x":-500,"y":-180,"width":103,"height":50},
+		{"id":"a27d7390ec4e795d","type":"text","text":"```java\nss.selectOne(\"member.login\", map)\n```","x":-520,"y":60,"width":321,"height":60},
+		{"id":"0935c86cf583637d","type":"text","text":"```java\nMemVO mvo\n```","x":-520,"y":180,"width":167,"height":60},
+		{"id":"66fbdece39c981c7","type":"text","text":"class : MemVO","x":-920,"y":0,"width":250,"height":60},
+		{"id":"209f166d53a11853","type":"text","text":"xml : member.xml","x":-920,"y":80,"width":250,"height":60},
+		{"id":"2042ba85476816e2","type":"text","text":"xml : config.xml","x":-920,"y":160,"width":250,"height":60},
+		{"id":"05ba7234d7a0c93b","type":"text","text":"class : FactoryService.java","x":-920,"y":240,"width":250,"height":60},
+		{"id":"4790194d3a92d8d9","x":-300,"y":300,"width":138,"height":60,"color":"1","type":"text","text":"HttpSession"}
+	],
+	"edges":[
+		{"id":"35d8908e83fd1c57","fromNode":"2174b65505379bde","fromSide":"bottom","toNode":"cd1a64f8fa7882a1","toSide":"top","label":"사용자가 입력한 파라미터 전달"},
+		{"id":"a85e3ab1bc7b5bdd","fromNode":"a27d7390ec4e795d","fromSide":"bottom","toNode":"0935c86cf583637d","toSide":"top"},
+		{"id":"6c615df7791449d2","fromNode":"0d7c874a33f9294e","fromSide":"right","toNode":"cd1a64f8fa7882a1","toSide":"left"},
+		{"id":"cc1445e10642feab","fromNode":"0935c86cf583637d","fromSide":"bottom","toNode":"4790194d3a92d8d9","toSide":"left","label":"저장"}
+	]
+}
